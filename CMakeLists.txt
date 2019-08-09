@@ -4,6 +4,8 @@ if(POLICY CMP0054)
     cmake_policy(SET CMP0054 NEW)
 endif()
 
+add_compile_options(-fPIC)
+
 option(HARFBUZZ_BUILD_ICU "Enable building of ICU" OFF)
 option(HARFBUZZ_BUILD_UCDN "Enable building of UCDN" ON)
 if (APPLE)
